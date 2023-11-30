@@ -1,8 +1,9 @@
+import Logo from "../../Shared/Navbar/Logo";
 
 const Home = () => {
   return (
     <div>
-      <h2 className="text-3xl">This is Home</h2>
+      <Logo></Logo>
     </div>
   );
 };
