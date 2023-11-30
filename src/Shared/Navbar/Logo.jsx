@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import logoImg from "../../../src/assets/images/logo-dark.png";
-import Container from "../Container";
+
 
 const Logo = () => {
   return (
