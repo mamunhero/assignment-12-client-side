@@ -20,15 +20,15 @@ const MenuDropDown = () => {
           </div>
         </div>
         {isOpen && (
-          <div className="absolute rounded-xl shadow-md w-[40vw] md:w-[15vw] bg-white overflow-hidden right-0 top-12 text-sm text-center">
+          <div className="absolute rounded-xl shadow-md w-[40vw] md:w-[15vw] bg-slate-900 overflow-hidden right-0 top-12 text-sm text-center">
             <div className="flex flex-col cursor-pointer"> 
-              <Link to="/" className="block md:hidden px-4 py-4 font-semibold text-red-500 hover:bg-blue-400 transition">
+              <Link to="/" className="block md:hidden px-4 py-4 font-semibold text-white hover:bg-blue-400 transition">
                 Home
               </Link>
-              <Link to="/login" className="px-4 py-4 font-semibold text-red-500 hover:bg-blue-400 transition">
+              <Link to="/login" className="px-4 py-4 font-semibold text-white hover:bg-blue-400 transition">
                 Login
               </Link>
-              <Link to="/signup" className="px-4 py-4 font-semibold text-red-500 hover:bg-blue-400 transition">
+              <Link to="/signup" className="px-4 py-4 font-semibold text-white hover:bg-blue-400 transition">
                 Sign Up
               </Link>
             </div>

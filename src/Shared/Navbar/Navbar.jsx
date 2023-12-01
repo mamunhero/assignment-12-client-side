@@ -4,7 +4,7 @@ import Menu from "./Menu";
 
 const Navbar = () => {
   return (
-    <div className="fixed w-full bg-zinc-800 z-10 shadow-lg  ">
+    <div className="fixed w-full bg-black opacity-30 z-10 shadow-lg  ">
       <div className="py-4">
         <Container>
           <div className="flex flex-row justify-between items-center gap-3">
