@@ -1,0 +1,60 @@
+[
+  {
+    "image": "https://i.ibb.co/Ryr0Hyk/hiking-image-two.jpg",
+    "tourType": "Hiking",
+    "tripTitle": "Mountain Trek",
+    "price": "$500",
+    "description": "Hiking offers an exhilarating escape into nature's embrace, challenging enthusiasts with varying terrains and breathtaking vistas. Trekking through lush forests or scaling mountainous heights, hikers relish the serenity of untouched landscapes while embracing physical exertion. This outdoor pursuit nurtures a profound connection with the earth, inspiring a sense of accomplishment amidst the beauty of untamed trails."
+  },
+  {
+    "image": "https://i.ibb.co/gSrxfbv/city-image-two.jpg",
+    "tourType": "City",
+    "tripTitle": "Urban Exploration",
+    "price": "$350",
+    "description": "Exploring Bangladesh's vibrant cities unveils a tapestry of culture and history. From Dhaka's bustling streets adorned with colorful rickshaws to Chittagong's dynamic waterfront, each city narrates tales of architectural marvels and lively markets. Rich in heritage, cities like Sylhet and Rajshahi offer glimpses into the nation's diverse traditions and ancient roots."
+  },
+  {
+    "image": "https://i.ibb.co/Y7hw9LR/historical-image-two.jpg",
+    "tourType": "Historical",
+    "tripTitle": "Heritage Sites Visit",
+    "price": "$250",
+    "description": "Embark on a historical odyssey through Bangladesh's storied past. Discover ancient wonders like the Paharpur Buddhist Vihara, a UNESCO World Heritage Site, and the Sundarbans, where history meets biodiversity. Explore the Lalbagh Fort's architectural splendor and the remnants of Mahasthangarh, echoing tales of antiquity in every stone."
+  },
+  {
+    "image": "https://i.ibb.co/QF970sY/beach-image-two.jpg",
+    "tourType": "Beach",
+    "tripTitle": "Coastal Retreat",
+    "price": "$600",
+    "description": "Experience Bangladesh's coastal allure with pristine beaches like Cox's Bazar, stretching endlessly along the Bay of Bengal. Revel in golden sands, azure waters, and vibrant sunsets. Discover tranquility amidst serene beachfronts, from Kuakata's unique panoramic view to the tranquil shores of Saint Martin's Island, offering a paradise for beach enthusiasts."
+  },
+  {
+    "image": "https://i.ibb.co/h1Zwz0H/forest-two-image.jpg",
+    "tourType": "Forest",
+    "tripTitle": "Woodland Trail",
+    "price": "$300",
+    "description": "Embark on an immersive forest tour across Bangladesh's lush woodlands, discovering the Sundarbans' mystical mangrove forests and its elusive Bengal tigers. Delve into Lawachara National Park's biodiversity, where vibrant wildlife thrives, and experience the tranquility of the Satchari National Park, offering a serene haven amidst nature's green embrace."
+  },
+  {
+    "image": "https://i.ibb.co/pj4X8BX/islant-image-two.jpg",
+    "tourType": "Island",
+    "tripTitle": "Island Getaway",
+    "price": "$280",
+    "description": "Discover Bangladesh's island gems in the Bay of Bengal. Saint Martin's entices with clear waters and vibrant marine life, perfect for snorkeling. Remote Hatiya charms with unspoiled beauty and quiet beaches. Serene Sonadia beckons, offering peaceful seclusion. Explore these unique paradises for an unforgettable Bangladeshi island-hopping experience."
+  },
+  {
+    "image": "https://i.ibb.co/SJ1zs0J/boating-image-two.jpg",
+    "tourType": "Boating",
+    "tripTitle": "River Cruise",
+    "price": "$550",
+    "description": "Embark on a captivating boating tour in Bangladesh, navigating through the country's intricate river networks like the Meghna and Padma. Explore serene waterways, witness rural life along the banks, and indulge in the tranquility of boat cruises amidst lush landscapes, offering a unique perspective of Bangladesh's scenic beauty."
+  },
+  {
+    "image": "https://i.ibb.co/zN3LvRr/festival-image-two.jpg",
+    "tourType": "Festival",
+    "tripTitle": "Cultural Festival Experience",
+    "price": "$600",
+    "description": "Delve into Bangladesh's vibrant festival tour, celebrating diverse cultural traditions and lively festivities. From the colorful Dhaka International Folk Festival to the joyous Pohela Boishakh (Bengali New Year), immerse in dance, music, and cultural revelry. Experience the richness of Bangladeshi heritage through the nation's vibrant and spirited celebrations."
+  }
+]
+
+
