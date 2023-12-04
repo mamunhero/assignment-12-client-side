@@ -11,7 +11,10 @@ import { MdOutlineFestival } from "react-icons/md";
 import TourText from "./TourText";
 import { Link } from "react-router-dom";
 
+
+
 const TourType = () => {
+  
   return (
     <div className="mt-10 mb-10">
       <Container>
