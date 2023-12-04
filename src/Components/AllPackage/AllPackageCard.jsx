@@ -1,6 +1,8 @@
+import { Link } from "react-router-dom";
+
 const AllPackageCard = ({ packageIS }) => {
   // console.log(packageIS);
-  const { image, tourType, tripTitle, price } = packageIS || {};
+  const { image, tourType, tripTitle, price, _id } = packageIS || {};
   return (
     <div>
       <div className="card w-full h-full bg-base-100 shadow-xl">
@@ -12,9 +14,11 @@ const AllPackageCard = ({ packageIS }) => {
           <p>{tripTitle}</p>
           <p>{price}</p>
           <div className="card-actions">
-            <button className="btn mt-4 bg-orange-500  text-white py-2 px-4 rounded-md hover:bg-teal-300">
-              View Package
-            </button>
+            <Link to={`/packages/${_id}`}>
+              <button className="btn mt-4 bg-orange-500  text-white py-2 px-4 rounded-md hover:bg-teal-300">
+                View Package
+              </button>
+            </Link>
           </div>
         </div>
       </div>
@@ -23,5 +27,3 @@ const AllPackageCard = ({ packageIS }) => {
 };
 
 export default AllPackageCard;
-
-

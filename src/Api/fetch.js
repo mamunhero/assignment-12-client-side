@@ -7,3 +7,12 @@ export const getAllPackage = async () => {
 }
 
 
+
+
+// fetch tourGuide 
+export const tourGuideInfo = async () => {
+  const {data} = await axiosSecure("/tourGuide")
+  return data
+}
+
+
