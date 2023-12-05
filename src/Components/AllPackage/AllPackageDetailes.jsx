@@ -9,7 +9,7 @@ const AllPackageDetailes = () => {
       <Container>
         <div className="grid grid-cols-7 gap-4"> 
           <div className="col-span-4"> 
-            <img className="object-cover max-w-md h-auto border overflow-hidden mb-5 border-black rounded-md" width="400px" height="200px" src={allPackage.image} alt="image" />
+            <img className="object-cover max-w-full max-h-full   border overflow-hidden mb-5 border-black rounded-md" width="550px" height="300px" src={allPackage.image} alt="image" />
             <p className="font-semibold text-justify">{allPackage.description}</p>
           </div>
         </div>
@@ -19,3 +19,5 @@ const AllPackageDetailes = () => {
 };
 
 export default AllPackageDetailes;
+
+
