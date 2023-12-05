@@ -6,11 +6,15 @@ import Container from "../../Shared/Container";
 
 const AllPackage = () => {
   const [isPackage, setIsPackage] = useState([]);
+  const [showAll, setShowAll] = useState(false);
   useEffect(() => {
     getAllPackage().then((data) => setIsPackage(data));
   }, []);
   // console.log(isPackage);
-  const isPackages =  isPackage.slice(0, 4);
+  const isPackages = showAll ? isPackage : isPackage.slice(0, 4);
+  const handleShowAll = () => {
+    setShowAll(true);
+  };
   return (
     <div>
       <Container>
@@ -20,7 +24,8 @@ const AllPackage = () => {
           ))}
         </div>
         <div className="flex items-center justify-center mt-5 mb-5">
-          <button className="btn bg-teal-300 text-white py-2 px-4 rounded-md hover:bg-orange-600 transation">
+          <button className="btn bg-teal-300 text-white py-2 px-4 rounded-md hover:bg-orange-600 transation"
+            onClick={handleShowAll}>
             All Package
           </button>
         </div>
@@ -30,3 +35,5 @@ const AllPackage = () => {
 };
 
 export default AllPackage;
+
+

@@ -5,6 +5,7 @@ import Login from "../Pages/Login/Login";
 import SignUp from "../Pages/SignUp/SignUp";
 import AllPackageDetailes from "../Components/AllPackage/AllPackageDetailes";
 import { getOnePackage } from "../Api/fetch";
+import PrivateRoute from './PrivateRoute';
 
 
 
@@ -20,7 +21,7 @@ const Route = createBrowserRouter([
       },
       {
         path: "/packages/:id",
-        element: <AllPackageDetailes></AllPackageDetailes>,
+        element: <PrivateRoute><AllPackageDetailes></AllPackageDetailes></PrivateRoute>,
         loader: ({params})=> getOnePackage(params.id)
       }
     ]

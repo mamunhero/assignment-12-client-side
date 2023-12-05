@@ -33,6 +33,11 @@ const TourPlan = ({ allPackage }) => {
           the Hotel. Visit the Ramsagar-historical pond (16th Century) & Night Halt.
         </span>
       </div>
+      <div className="flex  mt-5 mb-5">
+        <button className="btn bg-teal-300 text-white py-2 px-4 rounded-md hover:bg-orange-600 transation">
+          Booknow
+        </button>
+      </div>
     </div>
   );
 };
