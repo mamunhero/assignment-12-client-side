@@ -1,9 +1,10 @@
 import { useLoaderData } from "react-router";
 import Container from "../../Shared/Container";
+import TourPlan from "./TourPlan";
 
 const AllPackageDetailes = () => {
   const allPackage = useLoaderData();
-  console.log(allPackage);
+  // console.log(allPackage);
   return (
     <div className="mt-10 mb-10">
       <Container>
@@ -12,6 +13,8 @@ const AllPackageDetailes = () => {
             <img className="object-cover max-w-full max-h-full   border overflow-hidden mb-5 border-black rounded-md" width="550px" height="300px" src={allPackage.image} alt="image" />
             <p className="font-semibold text-justify">{allPackage.description}</p>
           </div>
+          {/* tour plan */}
+          <TourPlan allPackage={allPackage}></TourPlan>
         </div>
       </Container>
     </div>
