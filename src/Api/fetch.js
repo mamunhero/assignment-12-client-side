@@ -6,7 +6,11 @@ export const getAllPackage = async () => {
   return data
 }
 
-
+// fetch one package 
+export const getOnePackage = async  id => {
+  const {data} = await axiosSecure(`/packages/${id}`)
+  return data
+}
 
 
 // fetch tourGuide 
