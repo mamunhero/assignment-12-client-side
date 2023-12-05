@@ -1,7 +1,7 @@
-import React from "react";
+import { Link } from "react-router-dom";
 
 const TourPlan = ({ allPackage }) => {
-  console.log(allPackage);
+  // console.log(allPackage);
   return (
     <div className="col-span-3">
       <h2 className="font-bold">Tour Plan</h2>
@@ -34,9 +34,11 @@ const TourPlan = ({ allPackage }) => {
         </span>
       </div>
       <div className="flex  mt-5 mb-5">
-        <button className="btn bg-teal-300 text-white py-2 px-4 rounded-md hover:bg-orange-600 transation">
-          Booknow
-        </button>
+        <Link  to={`/booking/${allPackage._id}`}>
+          <button className="btn bg-teal-300 text-white py-2 px-4 rounded-md hover:bg-orange-600 transation  ">
+            Booknow
+          </button>
+        </Link>
       </div>
     </div>
   );

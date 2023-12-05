@@ -19,4 +19,9 @@ export const tourGuideInfo = async () => {
   return data
 }
 
+// fetch booking 
+export const getBooking = async id => {
+  const {data} = await axiosSecure(`/booking/${id}`)
+  return data
+}
 
