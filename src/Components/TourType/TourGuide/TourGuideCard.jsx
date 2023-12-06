@@ -1,17 +1,19 @@
 const TourGuideCard = ({ tourGuideData }) => {
-  const { name, languages, excursions, rating, image } = tourGuideData || {};
+  const { name, languages, age, email, phone, rating, image } = tourGuideData || {};
   return (
     <div className="">
       <div>
-        <div className="flex gap-5">
+        <div className="flex gap-5 mt-5 mb-10">
           <div>
             <img className="object-cover w-full h-auto" width="200" height="200" src={image} alt="Avatar" />
           </div>
           <div>
             <h2>Name:{name}</h2>
             <p>Languages:{languages}</p>
-            <div className="flex gap-5">
-              <p>Excursions:{excursions}</p>
+            <div className="">
+              <p>Age: {age}</p>
+              <p>Phone: {phone}</p>
+              <p>Email: {email}</p>
             </div>
             <div>
               <span>Rating</span>
@@ -30,3 +32,6 @@ const TourGuideCard = ({ tourGuideData }) => {
 };
 
 export default TourGuideCard;
+
+
+

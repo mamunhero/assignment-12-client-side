@@ -1,17 +1,14 @@
 import { useEffect, useState } from "react";
 import { getBooking } from "../../Api/fetch";
-
-
-
+import { useParams } from "react-router";
 
 const BookingFrom = () => {
+  const { id } = useParams();
   const [booking, setBooking] = useState([]);
-  useEffect(()=> {
-    getBooking()
-    .then(data=>setBooking(data))
-  },[])
+  useEffect(() => {
+    getBooking(id).then((data) => setBooking(data));
+  }, [id]);
   console.log(booking);
-
 
   return (
     <div className="mt-10  mb-10">
@@ -53,8 +50,14 @@ const BookingFrom = () => {
               <span className="label-text">Price</span>
             </label>
             <label className="input-group">
-              <input type="text" name="price" required placeholder="Price" className="input input-bordered w-full" />
-              {booking?.price}
+              <input
+                type="text"
+                name="price"
+                required
+                placeholder="Price"
+                className="input input-bordered w-full"
+                value={booking?.price}
+              />
             </label>
           </div>
           <div className="form-control md:w-1/2 ml-4">
@@ -77,29 +80,22 @@ const BookingFrom = () => {
         <div className="flex mb-8">
           <div className="form-control w-full ml-4">
             <label className="label">
-              <span className="label-text">Photo</span>
+              <span className="label-text">Select Image</span>
             </label>
-            <label className="input-group">
-              <input
-                type="text"
-                name="photo"
-                required
-                placeholder="Enter photo URL"
-                className="input input-bordered w-full"
-              />
-            </label>
+            <input required type="file" name="image" accept="image/*" />
           </div>
           <div className="form-control w-full ml-4">
             <label className="label">
-              <span className="label-text">Photo</span>
+              <span className="label-text">Tour Title</span>
             </label>
             <label className="input-group">
               <input
                 type="text"
-                name="photo"
+                name="title"
                 required
-                placeholder="Enter photo URL"
+                placeholder="Tour Title"
                 className="input input-bordered w-full"
+                value={booking?.tripTitle}
               />
             </label>
           </div>
@@ -110,5 +106,3 @@ const BookingFrom = () => {
 };
 
 export default BookingFrom;
-
-

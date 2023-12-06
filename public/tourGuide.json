@@ -1,59 +1,181 @@
 [
   {
     "name": "Rahim",
-    "languages": "Bengali", "English",
-    "excursions": 5,
+    "languages": ["Bengali", "English"],
+    "age": 30,
+    "email": "john@example.com",
+    "phone": "+1234567890",
     "rating": 4.6,
+    "education": {
+      "degree": "Bachelor's in Tourism Management",
+      "institution": "Tourism University",
+      "graduation_year": 2015
+    },
+    "skills": ["Multilingual Communication", "Cultural Knowledge", "Customer Service", "Tour Planning"],
+    "work_experience": [
+      {
+        "job_title": "Senior Tour Guide",
+        "company": "Explore Adventures Inc.",
+        "duration": "2015 - Present"
+      }
+    ],
     "image": "https://i.ibb.co/nPsJ6W6/prodile-one.png"
   },
   {
     "name": "Fatima",
-    "languages": "Bengali", "Arabic",
-    "excursions": 6,
+    "languages": ["Bengali", "Arabic"],
+    "age": 28,
+    "email": "jane@example.com",
+    "phone": "+1987654321",
     "rating": 4.8,
+    "education": {
+      "degree": "Diploma in Hospitality Management",
+      "institution": "Hospitality Institute",
+      "graduation_year": 2012
+    },
+    "skills": ["Tour Route Planning", "Customer Interaction", "Problem Solving", "First Aid"],
+    "work_experience": [
+      {
+        "job_title": "Tour Guide",
+        "company": "Adventures Abroad Co.",
+        "duration": "2012 - Present"
+      }
+    ],
     "image": "https://i.ibb.co/5Gzr33w/profile-two.png"
   },
   {
     "name": "Ayesha",
-    "languages":"Bengali", "Hindi",
-    "excursions": 3,
+    "languages": ["Bengali", "Hindi"],
+    "age": 35,
+    "email": "alice@example.com",
+    "phone": "+447700900000",
     "rating": 4.3,
+    "education": {
+      "degree": "Bachelor's in History",
+      "institution": "History University",
+      "graduation_year": 2014
+    },
+    "skills": ["Historical Knowledge", "Storytelling", "Group Management", "Research"],
+    "work_experience": [
+      {
+        "job_title": "History Tour Guide",
+        "company": "Heritage Tours LLC",
+        "duration": "2014 - Present"
+      }
+    ],
     "image": "https://i.ibb.co/hsqNB7B/profile-three.png"
   },
   {
     "name": "Kamal",
-    "languages":"Bengali", "English",
-    "excursions": 7,
+    "languages": ["Bengali", "English"],
+    "age": 25,
+    "email": "bob@example.com",
+    "phone": "+610123456789",
     "rating": 4.7,
+    "education": {
+      "degree": "Bachelor's in Cultural Studies",
+      "institution": "Cultural Institute",
+      "graduation_year": 2016
+    },
+    "skills": ["Cultural Diversity", "Interpersonal Skills", "Tour Management", "Public Speaking"],
+    "work_experience": [
+      {
+        "job_title": "Cultural Tour Guide",
+        "company": "Cultural Expeditions Ltd.",
+        "duration": "2016 - Present"
+      }
+    ],
     "image": "https://i.ibb.co/sy81wP6/profile-six.png"
   },
   {
     "name": "Nadia",
-    "languages": "Bengali", "English",
-    "excursions": 4,
+    "languages": ["Bengali", "English"],
+    "age": 32,
+    "email": "emily@example.com",
+    "phone": "+81333333333",
     "rating": 4.9,
+    "education": {
+      "degree": "Master's in Archaeology",
+      "institution": "Archaeology College",
+      "graduation_year": 2013
+    },
+    "skills": ["Archaeological Knowledge", "Excavation Techniques", "Research Analysis", "Documentation"],
+    "work_experience": [
+      {
+        "job_title": "Archaeological Tour Guide",
+        "company": "Ancient Explorations LLC",
+        "duration": "2013 - Present"
+      }
+    ],
     "image": "https://i.ibb.co/bKq9sVm/profile-five.png"
   },
   {
     "name": "Farhan",
-    "languages": "Bengali", "Urdu",
-    "excursions": 5,
+    "languages": ["Bengali", "Urdu"],
+    "age": 27,
+    "email": "david@example.com",
+    "phone": "+861234567890",
     "rating": 4.5,
+    "education": {
+      "degree": "Diploma in Wildlife Conservation",
+      "institution": "Wildlife Institute",
+      "graduation_year": 2017
+    },
+    "skills": ["Wildlife Identification", "Nature Conservation", "Ecotourism", "Environmental Education"],
+    "work_experience": [
+      {
+        "job_title": "Wildlife Tour Guide",
+        "company": "Nature Adventures Co.",
+        "duration": "2017 - Present"
+      }
+    ],
     "image": "https://i.ibb.co/sy81wP6/profile-six.png"
   },
   {
     "name": "Aisha",
-    "languages": "Bengali", "English",
-    "excursions": 6,
+    "languages": ["Bengali", "English"],
+    "age": 29,
+    "email": "olivia@example.com",
+    "phone": "+5491123456789",
     "rating": 4.6,
+    "education": {
+      "degree": "Bachelor's in Geography",
+      "institution": "Geography University",
+      "graduation_year": 2015
+    },
+    "skills": ["Geographical Expertise", "Map Reading", "Geotourism", "Environmental Sustainability"],
+    "work_experience": [
+      {
+        "job_title": "Geography Tour Guide",
+        "company": "Geographic Adventures Inc.",
+        "duration": "2015 - Present"
+      }
+    ],
     "image": "https://i.ibb.co/DpFn79x/profile-four.png"
   },
   {
     "name": "Riyaad",
-    "languages": "Bengali", "English",
-    "excursions": 4,
+    "languages": ["Bengali", "English"],
+    "age": 31,
+    "email": "michael@example.com",
+    "phone": "+527775551234",
     "rating": 4.4,
+    "education": {
+      "degree": "Master's in Hospitality Management",
+      "institution": "Hospitality Academy",
+      "graduation_year": 2014
+    },
+    "skills": ["Customer Relations", "Event Management", "Hospitality Services", "Tourism Marketing"],
+    "work_experience": [
+      {
+        "job_title": "Hospitality Tour Guide",
+        "company": "Hospitality Tours & Events",
+        "duration": "2014 - Present"
+      }
+    ],
     "image": "https://i.ibb.co/v3G12K2/profile-eight.png"
   }
 ]
+
+
 
