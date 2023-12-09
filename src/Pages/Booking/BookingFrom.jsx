@@ -1,6 +1,9 @@
 import { useEffect, useState } from "react";
-import { getBooking } from "../../Api/fetch";
+import { getAddBooking, getBooking } from "../../Api/fetch";
 import { useParams } from "react-router";
+import useAuth from './../../Hooks/useAuth';
+import { imageUpload } from "../../Api/image";
+import Swal from "sweetalert2";
 
 const BookingFrom = () => {
   const { id } = useParams();
@@ -8,12 +11,47 @@ const BookingFrom = () => {
   useEffect(() => {
     getBooking(id).then((data) => setBooking(data));
   }, [id]);
-  console.log(booking);
+  const {user} = useAuth();
+  
+  const handleBookingFrom = async event => {
+    event.preventDefault();
+    const form = event.target;
+    const name = form.name.value;
+    const email = form.email.value;
+    const price = form.price.value;
+    const guide = form.guide.value;
+    const title = form.title.value;
+    const image = form.image.files[0];
+    const image_url =  await imageUpload(image)
+    const bookingFromData = { name, email, price, guide, title,  image:image_url?.data?.display_url}
+
+    try{
+      const addBookingData = await getAddBooking(bookingFromData)
+      console.log(addBookingData);
+      // navigate
+      Swal.fire({
+        title: "Good job!",
+        text: "Tour Booking SuccessFully",
+        icon: "success"
+      });
+    }
+    catch(error){
+      console.log(error);
+      Swal.fire({
+        title: "Error!",
+        text: "No booking",
+        icon: "error"
+      });
+    }
+   
+  }
+
+
 
   return (
     <div className="mt-10  mb-10">
       <h2 className="text-center text-orange-600 font-bold text-2xl">Booking From</h2>
-      <form>
+      <form onSubmit={handleBookingFrom}>
         <div className="flex mb-8">
           <div className="form-control md:w-1/2 ml-4">
             <label className="label">
@@ -26,6 +64,7 @@ const BookingFrom = () => {
                 required
                 placeholder=" Tourist Name"
                 className="input input-bordered w-full"
+                value={user?.displayName || " "}
               />
             </label>
           </div>
@@ -40,6 +79,7 @@ const BookingFrom = () => {
                 required
                 placeholder="Tourist Email"
                 className="input input-bordered w-full"
+                value={user?.email || " "}
               />
             </label>
           </div>
@@ -100,9 +140,16 @@ const BookingFrom = () => {
             </label>
           </div>
         </div>
+        <div>
+      <input type="submit" value="Reserve" className=" border-2 block  font-Rancho font-normal text-lg  w-full  bg-orange-500 text-white py-2 px-4 rounded-md hover:bg-teal-300" />
+    </div>
       </form>
     </div>
   );
 };
 
+
+
 export default BookingFrom;
+
+

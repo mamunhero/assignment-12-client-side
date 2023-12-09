@@ -25,3 +25,9 @@ export const getBooking = async id => {
   return data
 }
 
+// fetch addbooking post
+export const getAddBooking = async bookingFromData => {
+  const {data} = await axiosSecure.post("/addBooking", bookingFromData)
+  return data
+  
+}
